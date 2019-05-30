@@ -1,8 +1,4 @@
-import {
-  createStore,
-  applyMiddleware,
-  compose
-} from 'redux';
+import { createStore, applyMiddleware, compose } from 'redux';
 
 const logger = store => next => action => {
   console.log('action:', action);
