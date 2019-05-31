@@ -4,6 +4,7 @@ export const FETCH_CHARACTERS = 'FETCH_CHARACTERS';
 export const FETCH_CHARACTERS_ERROR = 'FETCH_CHARACTERS_ERROR';
 
 export const fetchCharacters = () => dispatch => {
+  console.log('hit fetch function');
   return getCharacters()
     .then(character => {
       dispatch({
