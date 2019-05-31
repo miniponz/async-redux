@@ -1,4 +1,4 @@
-import getCharacters from '../services/getCharacters';
+import { getCharacters } from '../services/getCharacters';
 
 export const FETCH_CHARACTERS = 'FETCH_CHARACTERS';
 export const FETCH_CHARACTERS_ERROR = 'FETCH_CHARACTERS_ERROR';

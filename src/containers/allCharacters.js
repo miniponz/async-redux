@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Characters from '../components/Characters';
 import { getCharacters, getCharactersError } from '../selectors/characterSelectors';
-import fetchCharacters from '../actions/characterActions';
+import { fetchCharacters } from '../actions/characterActions';
 
 class AllCharacters extends PureComponent {
   static propTypes = {
@@ -17,7 +17,7 @@ class AllCharacters extends PureComponent {
   }
 
   render() {
-    const { characters, error } = this.props;
+    const { characters } = this.props;
     return <Characters characters={characters} />;
   }
 }
